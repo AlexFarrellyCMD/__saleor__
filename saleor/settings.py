@@ -440,6 +440,8 @@ ALLOWED_HOSTS = [
     'tpd-dev.herokuapp.com',
     'tpd-development.herokuapp.com',
     'tpd-staging.herokuapp.com',
+    'tradepricesdirect.com', 
+    '.tradepricesdirect.com',
     '127.0.0.1'
 ]
 ALLOWED_GRAPHQL_ORIGINS = get_list(os.environ.get("ALLOWED_GRAPHQL_ORIGINS", "*"))
