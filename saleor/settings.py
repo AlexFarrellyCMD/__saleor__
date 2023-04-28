@@ -765,7 +765,7 @@ if REDIS_URL:
     CACHE_URL = os.environ.setdefault("CACHE_URL", REDIS_URL)
 CACHES = {"default": django_cache_url.config()}
 CACHES["default"]["TIMEOUT"] = parse(os.environ.get("CACHE_TIMEOUT", "7 days"))
-CACHES.setdefault('default', {}).setdefault('OPTIONS', {}).setdefault('CONNECTION_POOL_KWARGS', {}).setdefault('ssl_cert_reqs', False)
+
 JWT_EXPIRE = True
 JWT_TTL_ACCESS = timedelta(seconds=parse(os.environ.get("JWT_TTL_ACCESS", "5 minutes")))
 JWT_TTL_APP_ACCESS = timedelta(
