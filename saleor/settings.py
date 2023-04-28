@@ -438,6 +438,7 @@ PLAYGROUND_ENABLED = get_bool_from_env("PLAYGROUND_ENABLED", True)
 ALLOWED_HOSTS = [
     '0.0.0.0',
     'tpd-dev.herokuapp.com',
+    'tpd-dev.herokuapp.com/graphql/',
     'tradepricesdirect.com', 
     '.tradepricesdirect.com',
     '127.0.0.1'
